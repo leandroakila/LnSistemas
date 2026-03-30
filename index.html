@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LN Sistemas - Soluções inteligentes em sistemas e automação de processos. Desenvolvimento de sistemas personalizados para empresas.">
+    <title>LN Sistemas - Soluções inteligentes em sistemas e automação</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .product-highlight-section {
+            padding: 5rem 0;
+            background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
+        }
+        .product-highlight-card {
+            display: grid;
+            grid-template-columns: 1.1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+            background: #ffffff;
+            border-radius: 24px;
+            padding: 2rem;
+            box-shadow: 0 20px 45px rgba(10, 37, 64, 0.10);
+            overflow: hidden;
+        }
+        .product-highlight-media img {
+            width: 100%;
+            display: block;
+            border-radius: 18px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.10);
+        }
+        .product-highlight-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            background: rgba(30, 144, 255, 0.12);
+            color: #0A2540;
+            padding: .6rem 1rem;
+            border-radius: 999px;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .product-highlight-card h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #0A2540;
+        }
+        .product-highlight-card p {
+            margin-bottom: 1rem;
+            color: #343A40;
+            line-height: 1.8;
+        }
+        .product-highlight-list {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: .75rem 1.25rem;
+        }
+        .product-highlight-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: .6rem;
+            color: #343A40;
+        }
+        .product-highlight-list i { color: #28A745; margin-top: .2rem; }
+        .product-highlight-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        .btn-outline-primary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: .95rem 1.5rem;
+            border-radius: 999px;
+            border: 2px solid #0A2540;
+            color: #0A2540;
+            text-decoration: none;
+            font-weight: 600;
+            transition: .3s ease;
+        }
+        .btn-outline-primary:hover { background: #0A2540; color: #fff; }
+        @media (max-width: 900px) {
+            .product-highlight-card { grid-template-columns: 1fr; }
+            .product-highlight-list { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Menu de navegação -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-cube"></i>
+                <span>LN Sistemas</span>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Início</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="solucoes.html">Soluções</a></li>
+                <li><a href="projetos.html">Projetos prontos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html" class="btn-nav-contact">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Banner Principal -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Transformamos ideias em sistemas inteligentes para sua empresa</h1>
+                <p class="hero-subtitle">Desenvolvemos sistemas personalizados e soluções de automação que ajudam empresas a organizar informações, automatizar tarefas e melhorar a gestão de dados.</p>
+                <div class="hero-buttons">
+                    <a href="contato.html" class="btn btn-primary">Solicitar orçamento</a>
+                    <a href="servicos.html" class="btn btn-secondary">Conhecer serviços</a>
+                    <a href="projetos.html" class="btn btn-primary">Ver projetos prontos</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-background"></div>
+    </section>
+
+    <!-- Sobre a Empresa -->
+    <section class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sobre a LN Sistemas</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>A LN Sistemas é especializada no desenvolvimento de sistemas personalizados e soluções de automação para organização e gestão de dados empresariais.</p>
+                    <p>Nosso objetivo é criar ferramentas inteligentes que ajudem empresas e profissionais a automatizar tarefas, organizar informações e melhorar a eficiência de seus processos.</p>
+                    <p>Utilizamos tecnologias modernas e soluções personalizadas para transformar processos manuais em sistemas organizados, eficientes e fáceis de utilizar.</p>
+                    <p>Cada projeto é desenvolvido de acordo com a necessidade de cada cliente, garantindo soluções práticas e adaptadas à realidade de cada negócio.</p>
+                </div>
+                <div class="about-image">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vantagens -->
+    <section class="advantages-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Vantagens das nossas soluções</h2>
+            </div>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Organização de informações</h3>
+                    <p>Centralize dados importantes em sistemas organizados e fáceis de utilizar.</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Automação de tarefas</h3>
+                    <p>Reduza tarefas manuais repetitivas através de automação inteligente.</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Relatórios rápidos</h3>
+                    <p>Tenha acesso a relatórios completos em poucos segundos.</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Melhor tomada de decisão</h3>
+                    <p>Com dados organizados e dashboards visuais, fica mais fácil analisar informações e tomar decisões estratégicas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Funciona -->
+    <section class="process-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Como funciona o desenvolvimento</h2>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Entendimento da necessidade</h3>
+                    <p>O cliente entra em contato e explica qual tipo de sistema ou solução precisa.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Análise da solução</h3>
+                    <p>É feita uma análise das informações necessárias para desenvolver a melhor solução.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Desenvolvimento do sistema</h3>
+                    <p>O sistema é desenvolvido de forma personalizada para atender as necessidades do cliente.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Entrega e suporte inicial</h3>
+                    <p>Após o desenvolvimento, o sistema é entregue junto com orientações para utilização.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projetos prontos -->
+    <section class="product-highlight-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Projetos prontos para compra</h2>
+                <p>Além do desenvolvimento sob medida, agora você também pode adquirir sistemas já finalizados e prontos para usar.</p>
+            </div>
+            <div class="product-highlight-card">
+                <div class="product-highlight-media">
+                    <img src="images/sistema-gestao-eventos-pro.png" alt="Tela do Sistema Gestão de Eventos Pro">
+                </div>
+                <div class="product-highlight-content">
+                    <span class="product-highlight-badge"><i class="fas fa-bolt"></i> Entrega digital imediata</span>
+                    <h3>Sistema Gestão de Eventos Pro</h3>
+                    <p>Uma solução criada para chácaras, salões de festas e espaços para eventos que precisam organizar agenda, clientes, contratos e financeiro em um único lugar.</p>
+                    <p>Funciona offline, não exige instalação e permite exportar/importar backups com praticidade.</p>
+                    <ul class="product-highlight-list">
+                        <li><i class="fas fa-check-circle"></i><span>Cadastro de clientes</span></li>
+                        <li><i class="fas fa-check-circle"></i><span>Controle de eventos e agenda</span></li>
+                        <li><i class="fas fa-check-circle"></i><span>Gestão de contratos</span></li>
+                        <li><i class="fas fa-check-circle"></i><span>Dashboard com indicadores</span></li>
+                        <li><i class="fas fa-check-circle"></i><span>Backup e restauração</span></li>
+                        <li><i class="fas fa-check-circle"></i><span>Login de acesso</span></li>
+                    </ul>
+                    <div class="product-highlight-actions">
+                        <a href="projetos.html" class="btn btn-primary">Ver detalhes e comprar</a>
+                        <a href="contato.html" class="btn-outline-primary">Falar comigo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Pronto para transformar sua empresa?</h2>
+            <p>Entre em contato e descubra como podemos ajudar sua empresa a automatizar processos e organizar informações.</p>
+            <a href="contato.html" class="btn btn-primary">Solicitar orçamento</a>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3><i class="fas fa-cube"></i> LN Sistemas</h3>
+                    <p>Soluções inteligentes em sistemas e automação de processos.</p>
+                    <p>Desenvolvimento de sistemas personalizados, automação de tarefas e organização de dados para empresas.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="solucoes.html">Soluções</a></li>
+                        <li><a href="projetos.html">Projetos prontos</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-envelope"></i> contato@lnsistemas.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Goiânia - GO - Brasil</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 LN Sistemas - Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
